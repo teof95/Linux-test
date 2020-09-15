@@ -1,0 +1,37 @@
+alex@alex-Inspiron-5577:/$ ls ~/home
+ls: cannot access '/home/alex/home': No such file or directory
+alex@alex-Inspiron-5577:/$ ls ~/home/ale
+ls: cannot access '/home/alex/home/ale': No such file or directory
+alex@alex-Inspiron-5577:/$ ls ~/home/alex
+ls: cannot access '/home/alex/home/alex': No such file or directory
+alex@alex-Inspiron-5577:/$ ls ~/Downloads
+unnamed.jpg
+alex@alex-Inspiron-5577:/$ pwd
+/
+alex@alex-Inspiron-5577:/$ ls
+bin  boot  cdrom  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  swapfile  sys  tmp  usr  var
+alex@alex-Inspiron-5577:/$ cd home
+alex@alex-Inspiron-5577:/home$ cd Alex
+bash: cd: Alex: No such file or directory
+alex@alex-Inspiron-5577:/home$ ls
+alex
+alex@alex-Inspiron-5577:/home$ cd alex
+alex@alex-Inspiron-5577:~$ pwd
+/home/alex
+alex@alex-Inspiron-5577:~$ ls ~/Downloads
+unnamed.jpg
+alex@alex-Inspiron-5577:~$ pwd
+/home/alex
+alex@alex-Inspiron-5577:~$ ls
+Desktop  Documents  Downloads  google-chrome-stable_current_amd64.deb  google-chrome-stable_current_amd64.deb.1  Music  Pictures  Public  snap  Templates  Videos
+alex@alex-Inspiron-5577:~$ cd Desktop
+alex@alex-Inspiron-5577:~/Desktop$ ls
+alex@alex-Inspiron-5577:~/Desktop$ cd ..
+alex@alex-Inspiron-5577:~$ cd Pictures
+alex@alex-Inspiron-5577:~/Pictures$ ls
+alex@alex-Inspiron-5577:~/Pictures$ cd ..
+alex@alex-Inspiron-5577:~$ ls
+Desktop  Documents  Downloads  google-chrome-stable_current_amd64.deb  google-chrome-stable_current_amd64.deb.1  Music  Pictures  Public  snap  Templates  Videos
+alex@alex-Inspiron-5577:~$ cd ..
+alex@alex-Inspiron-5577:/home$ ^C
+alex@alex-Inspiron-5577:/home$ 
