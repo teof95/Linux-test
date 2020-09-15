@@ -1,0 +1,178 @@
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  chalet  cupboard
+alex@alex-Inspiron-5577:~/Documents/chalet$ rm chalet
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd cabinets
+alex@alex-Inspiron-5577:~/Documents/chalet/cabinets$ ls
+trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet/cabinets$ cp trinkets ../
+alex@alex-Inspiron-5577:~/Documents/chalet/cabinets$ ls
+trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet/cabinets$ cd ..
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ find chalet
+find: ‘chalet’: No such file or directory
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd ..
+alex@alex-Inspiron-5577:~/Documents$ find chalet
+chalet
+chalet/armour
+chalet/armchair1
+chalet/trinkets
+chalet/cupboard
+chalet/armchair2
+chalet/cabinets
+chalet/cabinets/trinkets
+alex@alex-Inspiron-5577:~/Documents$ ls
+chalet
+alex@alex-Inspiron-5577:~/Documents$ cd shalet
+bash: cd: shalet: No such file or directory
+alex@alex-Inspiron-5577:~/Documents$ cdcshalet
+cdcshalet: command not found
+alex@alex-Inspiron-5577:~/Documents$ cd chalet
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cp trinkets trinkets2
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets  trinkets2
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets  trinkets2
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd cupboard
+alex@alex-Inspiron-5577:~/Documents/chalet/cupboard$ ls
+alex@alex-Inspiron-5577:~/Documents/chalet/cupboard$ cd ..
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets  trinkets2
+alex@alex-Inspiron-5577:~/Documents/chalet$ mv trinkets2 /cabinets
+mv: cannot move 'trinkets2' to '/cabinets': Permission denied
+alex@alex-Inspiron-5577:~/Documents/chalet$ mv -r trinkets2 /cabinets
+mv: invalid option -- 'r'
+Try 'mv --help' for more information.
+alex@alex-Inspiron-5577:~/Documents/chalet$ mv trinkets2 /cabinets
+mv: cannot move 'trinkets2' to '/cabinets': Permission denied
+alex@alex-Inspiron-5577:~/Documents/chalet$ mv trinkets2 /ls
+mv: cannot move 'trinkets2' to '/ls': Permission denied
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets  trinkets2
+alex@alex-Inspiron-5577:~/Documents/chalet$ del trinkets2
+
+Command 'del' not found, did you mean:
+
+  command 'den' from snap den (1.2.0-0)
+  command 'hdel' from deb hfsutils (3.2.6-14)
+  command 'tel' from deb orville-write (2.55-3build1)
+  command 'delv' from deb bind9-dnsutils (1:9.16.1-0ubuntu2.3)
+  command 'dll' from deb brickos (0.9.0.dfsg-12.2)
+  command 'wdel' from deb wput (0.6.2+git20130413-8)
+  command 'qdel' from deb gridengine-client (8.1.9+dfsg-9build2)
+  command 'qdel' from deb slurm-wlm-torque (19.05.5-1)
+  command 'dex' from deb dex (0.8.0-2)
+  command 'deal' from deb deal (3.1.9-12)
+  command 'mdel' from deb mtools (4.0.24-1)
+  command 'dep' from deb go-dep (0.5.4-3)
+  command 'delp' from deb fp-utils-3.0.4 (3.0.4+dfsg-23)
+  command 'el' from deb oneliner-el (0.3.6-8)
+
+See 'snap info <snapname>' for additional versions.
+
+alex@alex-Inspiron-5577:~/Documents/chalet$ delete trinkets2
+delete: command not found
+alex@alex-Inspiron-5577:~/Documents/chalet$ rm trinkets2
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cp trinkets /cabinets
+cp: cannot create regular file '/cabinets': Permission denied
+alex@alex-Inspiron-5577:~/Documents/chalet$ cp trinkets /cabinets/trinkets
+cp: cannot create regular file '/cabinets/trinkets': No such file or directory
+alex@alex-Inspiron-5577:~/Documents/chalet$ cp trinkets ..cabinets/trinkets
+cp: cannot create regular file '..cabinets/trinkets': No such file or directory
+alex@alex-Inspiron-5577:~/Documents/chalet$ lcd
+
+Command 'lcd' not found, but there are 16 similar ones.
+
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cp trinkets trinkets cabinets/
+cp: warning: source file 'trinkets' specified more than once
+alex@alex-Inspiron-5577:~/Documents/chalet$ cp trinkets cabinets/
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd cabinets
+alex@alex-Inspiron-5577:~/Documents/chalet/cabinets$ ls
+trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet/cabinets$ cd ..
+alex@alex-Inspiron-5577:~/Documents/chalet$ find chalet
+find: ‘chalet’: No such file or directory
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd ..
+alex@alex-Inspiron-5577:~/Documents$ find chalet
+chalet
+chalet/armour
+chalet/armchair1
+chalet/trinkets
+chalet/cupboard
+chalet/armchair2
+chalet/cabinets
+chalet/cabinets/trinkets
+alex@alex-Inspiron-5577:~/Documents$ cd chalet
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd ciupboard
+bash: cd: ciupboard: No such file or directory
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd ciupbord
+bash: cd: ciupbord: No such file or directory
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd cpboard
+bash: cd: cpboard: No such file or directory
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd cupboard
+alex@alex-Inspiron-5577:~/Documents/chalet/cupboard$ ls
+alex@alex-Inspiron-5577:~/Documents/chalet/cupboard$ cd ..
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cp trinkets cupboard/
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd cupboard
+alex@alex-Inspiron-5577:~/Documents/chalet/cupboard$ ls
+trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet/cupboard$ cd..
+cd..: command not found
+alex@alex-Inspiron-5577:~/Documents/chalet/cupboard$ cd ../..
+alex@alex-Inspiron-5577:~/Documents$ find challet
+find: ‘challet’: No such file or directory
+alex@alex-Inspiron-5577:~/Documents$ find chalet
+chalet
+chalet/armour
+chalet/armchair1
+chalet/trinkets
+chalet/cupboard
+chalet/cupboard/trinkets
+chalet/armchair2
+chalet/cabinets
+chalet/cabinets/trinkets
+alex@alex-Inspiron-5577:~/Documents$ cd chalet
+alex@alex-Inspiron-5577:~/Documents/chalet$ dir
+armchair1  armchair2  armour  cabinets	cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard  trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ rm trinkets
+alex@alex-Inspiron-5577:~/Documents/chalet$ ls
+armchair1  armchair2  armour  cabinets  cupboard
+alex@alex-Inspiron-5577:~/Documents/chalet$ dir
+armchair1  armchair2  armour  cabinets	cupboard
+alex@alex-Inspiron-5577:~/Documents/chalet$ cd ..
+alex@alex-Inspiron-5577:~/Documents$ ls
+chalet
+alex@alex-Inspiron-5577:~/Documents$ find challet
+find: ‘challet’: No such file or directory
+alex@alex-Inspiron-5577:~/Documents$ find chalet
+chalet
+chalet/armour
+chalet/armchair1
+chalet/cupboard
+chalet/cupboard/trinkets
+chalet/armchair2
+chalet/cabinets
+chalet/cabinets/trinkets
+alex@alex-Inspiron-5577:~/Documents$ ^C
+alex@alex-Inspiron-5577:~/Documents$ 
